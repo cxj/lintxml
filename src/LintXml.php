@@ -39,7 +39,7 @@ class LintXml
 
         libxml_use_internal_errors(true);       // Do not display errors.
 
-        if ($this->document->loadXml($doc) === false) {
+        if ($this->document->loadXml($doc, LIBXML_PEDANTIC) === false) {
 
             $errors = libxml_get_errors();
             foreach ($errors as $error) {

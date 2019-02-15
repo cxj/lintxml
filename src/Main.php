@@ -83,7 +83,7 @@ class Main
             }
             $doc = file_get_contents($this->file);    // fixme debug
         }
-        if false === $doc) {
+        if (false === $doc) {
             $this->io->outln('<<red>>Unable to read input file<<reset>>');
 
             return Status::NOINPUT;
