@@ -16,7 +16,7 @@
         }
     ],
 
-    "main": "cli/lintxml.php",
+    "main": "bin/lintxml.php",
 
     "output": "lintxml.phar",
 

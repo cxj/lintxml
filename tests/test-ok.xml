@@ -1,0 +1,133 @@
+<div class="jobs">
+
+    <h2>Careers</h2>
+
+    <p>
+        Distinctively re-engineer revolutionary meta-services and premium
+        architectures. Intrinsically incubate intuitive opportunities and
+        real-time potentialities. Appropriately communicate one-to-one
+        technology after plug-and-play networks.
+
+        Quickly aggregate B2B users and worldwide potentialities. Progressively
+        plagiarize resource-leveling e-commerce through resource-leveling core
+        competencies. Dramatically mesh low-risk high-yield alignments before
+        transparent e-tailers.
+
+        Appropriately empower dynamic leadership skills after business portals.
+        Globally myocardinate interactive supply chains with distinctive quality
+        vectors. Globally revolutionize global sources through interoperable
+        services.
+    </p>
+
+    <h3>Current job openings</h3>
+    <ul>
+        <li>
+            <a
+                href="#"
+                data-load-url="jobs/polyethylene.html"
+                data-toggle="modal"
+                data-target="#modal"
+            >Polyethylene Stratigrapher</a> (1)
+        </li>
+
+        <li>
+            <a
+                href="#"
+                data-load-url="jobs/atomic.html"
+                data-toggle="modal"
+                data-target="#modal"
+            >Atomic Corduroy Hygienist</a> (1)
+        </li>
+
+        <li>
+            <a
+                href="#"
+                data-load-url="jobs/collet.html"
+                data-toggle="modal"
+                data-target="#modal"
+            >Certified Collet Instructor</a> (1)
+        </li>
+
+        <li>
+            <a
+                href="#"
+                data-load-url="jobs/tanker.html"
+                data-toggle="modal"
+                data-target="#modal"
+            >Forward Bevel Tanker</a> (1)
+        </li>
+    </ul>
+
+    <p>
+        Click on the links above for specific information about each job. The
+        following applies to all jobs listed above:
+    </p>
+
+    <h3>Benefits</h3>
+    <ul>
+        <li>Biodiesel fanny pack</li>
+        <li>Photo booth</li>
+        <li>Single-origin coffee swag</li>
+        <li>Flexible work schedule</li>
+    </ul>
+
+    <h3>Additional Information</h3>
+    <ul>
+        <li>Non-Smokers Only</li>
+        <li>Hours - Must be available until 6:00 PM Monday through Friday</li>
+    </ul>
+
+    <p>
+        Please send resume and references to
+        <a href="mailto:jobs@example.com">jobs@example.com</a>.
+    </p>
+
+    <p>
+        Salary DOQ/negotiable.
+    </p>
+
+
+    <div class="modal" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button"
+                            class="pull-right close"
+                            data-dismiss="modal">
+                        &#215;
+                    </button>
+
+                    <h4 class="modal-title">Job Opening</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p>This is where the content should be.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-default"
+                            data-dismiss="modal">Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fawking Bootstrap doesn't support remote URL modals in latest V3.
+        $('#modal').on('show.bs.modal', function (e) {
+            var url  = $(e.relatedTarget).data('load-url');
+            var text = $(e.relatedTarget).text();
+            console.log('href = ' + url);
+            console.log('text = ' + text);
+            $(this).find('.modal-body').load(url);
+            $(this).find('.modal-title').text(text);
+        });
+        $('#modal').on('hide.bs.modal', function (e) {
+            $(this).find('.modal-body').text('body text');
+            $(this).find('.modal-title').text('title text');
+        });
+        // -->
+    </script>
+</div>
