@@ -7,10 +7,11 @@
  * @copyright   2017, Chris Johnson
  * @license     MIT
  */
-
-
 namespace Cxj\LintXml;
 
+/**
+ * Class LintXml
+ */
 class LintXml
 {
     /**
@@ -19,7 +20,8 @@ class LintXml
     protected $docString;
 
     /**
-     * @var \DOMDocument
+     * @var \DOMDocument -  Represents an entire HTML or XML document;
+     * serves as the root of the document tree.
      */
     protected $document;
 

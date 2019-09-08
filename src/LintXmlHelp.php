@@ -1,6 +1,6 @@
 <?php
 /**
- * @file LintXmlHelp.php Replace with one line description.
+ * Usage help for lintxml.
  *
  * @package     cxj/lintxml
  * @author      Chris Johnson <cxjohnson@gmail.com>
@@ -9,11 +9,13 @@
  *
  * Created: 8/4/17 9:19 AM
  */
-
 namespace Cxj\LintXml;
 
-    use Aura\Cli\Help;
+use Aura\Cli\Help;
 
+/**
+ * Class LintXmlHelp
+ */
 class LintXmlHelp extends Help
 {
     /**

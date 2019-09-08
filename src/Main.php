@@ -19,6 +19,10 @@ use Aura\Cli\Status;
 use Aura\Cli\Stdio;
 
 
+/**
+ * Class Main
+ * Manage command line environment interaction.
+ */
 class Main
 {
     /**
@@ -37,7 +41,7 @@ class Main
     protected $help;
 
     /**
-     * @var Context\Getopt
+     * @var Context\Getopt Command line options.
      */
     protected $getopt;
 
@@ -62,6 +66,10 @@ class Main
         $this->getopt = $context->getopt(array_keys($this->help->getOptions()));
     }
 
+    /**
+     * Process a file.
+     * @return int
+     */
     public function run()
     {
         $status = $this->parseCommandLineOptions();
