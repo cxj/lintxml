@@ -1,24 +1,28 @@
 {
-    "name": "cxj/lintxml",
-    "description": "A linter for XML files using the libxml extension.",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
+    "name":              "cxj/lintxml",
+    "description":       "A linter for XML files using the libxml extension.",
+    "type":              "project",
+    "license":           "MIT",
+    "authors":           [
         {
-            "name": "Chris Johnson",
+            "name":  "Chris Johnson",
             "email": "cxjohnson@gmail.com"
         }
     ],
 
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
 
-    "autoload": {
+    "require":           {
+        "aura/cli":   "^2.2",
+
+        "ext-libxml": "*",
+        "ext-dom":    "*",
+        "php":        ">7.2"
+    },
+
+    "autoload":          {
         "psr-4": {
             "Cxj\\LintXml\\": "src/"
         }
-    },
-
-    "require": {
-        "aura/cli": "^2.2"
     }
 }
