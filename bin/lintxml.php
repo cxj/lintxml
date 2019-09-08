@@ -7,9 +7,10 @@
  * @copyright   2017, Chris Johnson
  * @license     MIT
  */
-
 namespace Cxj\LintXml;
 
+
+use Aura\Cli\Status;
 
 /**
  * Find the class autoloader.

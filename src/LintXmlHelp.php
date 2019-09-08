@@ -2,10 +2,10 @@
 /**
  * @file LintXmlHelp.php Replace with one line description.
  *
- * @package     PackageName
- * @author      Chris Johnson <c___@___.com>
- * @copyright   2017, CopyrightHolder
- * @license     Proprietary or Link to OS license
+ * @package     cxj/lintxml
+ * @author      Chris Johnson <cxjohnson@gmail.com>
+ * @copyright   2019, CopyrightHolder
+ * @license     MIT
  *
  * Created: 8/4/17 9:19 AM
  */

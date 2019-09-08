@@ -19,20 +19,24 @@ class LintXml
     protected $docString;
 
     /**
-     * @var \DomDocument
+     * @var \DOMDocument
      */
     protected $document;
 
     /**
      * LintXml constructor.
-     * @param $doc string - document string to be checked.
+     *
+     * @param string $doc - document string to be checked.
      */
     public function __construct($doc)
     {
-        $this->document = new \DomDocument;
+        $this->document  = new \DOMDocument;
         $this->docString = $doc;
     }
 
+    /**
+     * Load and parse the XML document.
+     */
     public function loadDocument()
     {
         $doc = $this->docString;
@@ -66,9 +70,17 @@ class LintXml
         return;
     }
 
+    /**
+     * Display an XML error.
+     *
+     * @param \LibXMLError $error - a LibXML error object.
+     * @param string $xml - the XML in error.
+     *
+     * @return string
+     */
     protected function display_xml_error($error, $xml)
     {
-        $return  = $xml[$error->line - 1] . "\n";
+        $return = $xml[$error->line - 1] . "\n";
         $return .= str_repeat('-', $error->column) . "^\n";
 
         switch ($error->level) {
@@ -84,8 +96,8 @@ class LintXml
         }
 
         $return .= trim($error->message) .
-            "\n  Line: $error->line" .
-            "\n  Column: $error->column";
+                   "\n  Line: $error->line" .
+                   "\n  Column: $error->column";
 
         if ($error->file) {
             $return .= "\n  File: $error->file";
