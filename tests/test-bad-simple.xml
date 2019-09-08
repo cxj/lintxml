@@ -1,0 +1,23 @@
+<div class="bad-simple">
+
+    <ul>
+        <li>
+            <a
+                href="#"
+                data-load-url="jobs/atomic.html"
+                data-toggle="modal"
+                data-target="#modal"
+            >Atomic Corduroy Hygienist</a> (1)
+        </li>
+
+        <li>
+            <a
+                href="#"
+                data-load-url="jobs/collet.html"
+                data-toggle="modal"
+                data-target="#modal"
+            >Certified Collet Instructor</a> (1)
+
+    </ul>
+
+</div>

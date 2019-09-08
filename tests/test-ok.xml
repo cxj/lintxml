@@ -115,7 +115,6 @@
     </div>
 
     <script>
-        // Fawking Bootstrap doesn't support remote URL modals in latest V3.
         $('#modal').on('show.bs.modal', function (e) {
             var url  = $(e.relatedTarget).data('load-url');
             var text = $(e.relatedTarget).text();
