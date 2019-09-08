@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "877cad2a1924aec34ea01c4ea0f16c45",
+    "content-hash": "be3090e3148fc2d10636eadc2749642b",
     "packages": [
         {
             "name": "aura/cli",
-            "version": "2.x-dev",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Cli.git",
@@ -66,10 +66,14 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-libxml": "*",
+        "ext-dom": "*",
+        "php": ">7.2"
+    },
     "platform-dev": []
 }
